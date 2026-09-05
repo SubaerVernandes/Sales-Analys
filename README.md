@@ -1,6 +1,6 @@
 # 📊 Regional Sales Analysis
 
-### Turning Sales Data into Actionable Business Insights
+### Mengubah Data Penjualan Menjadi Wawasan Bisnis yang Dapat Ditindaklanjuti
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-Data%20Analysis-blue?style=for-the-badge&logo=python&logoColor=white" />
@@ -10,127 +10,127 @@
 </p>
 
 <p align="center">
-  <b>End-to-End Data Analytics Project</b><br>
+  <b>Proyek Data Analytics End-to-End</b><br>
   Python • Pandas • NumPy • Matplotlib • Seaborn • Power BI
 </p>
 
 ---
 
-## 📌 Executive Summary
+## 📌 Ringkasan Proyek
 
-**Regional Sales Analysis** is an end-to-end data analytics project focused on transforming **five years of historical sales data** into actionable business insights.
+**Regional Sales Analysis** merupakan proyek **data analytics end-to-end** yang berfokus pada transformasi **data historis penjualan selama lima tahun** menjadi wawasan bisnis yang dapat ditindaklanjuti.
 
-The project analyzes sales performance across multiple dimensions:
+Proyek ini menganalisis kinerja penjualan berdasarkan beberapa dimensi utama:
 
-* 🌎 **Region & State**
-* 📦 **Product & SKU**
-* 🛒 **Sales Channel**
-* 👥 **Customer**
-* 📅 **Time & Seasonality**
-* 💰 **Revenue & Profitability**
+* 🌎 **Wilayah & Negara Bagian**
+* 📦 **Produk & SKU**
+* 🛒 **Saluran Penjualan**
+* 👥 **Pelanggan**
+* 📅 **Waktu & Musiman**
+* 💰 **Pendapatan & Profitabilitas**
 
-The analytical process starts with **data consolidation and preprocessing**, continues through **Exploratory Data Analysis (EDA)**, and ends with an **interactive Power BI dashboard and strategic business recommendations**.
+Proses analisis dimulai dari **konsolidasi dan preprocessing data**, dilanjutkan dengan **Exploratory Data Analysis (EDA)**, kemudian menghasilkan **dashboard Power BI interaktif dan rekomendasi bisnis strategis**.
 
-> **Goal:** Identify growth opportunities, understand profitability drivers, and provide data-driven recommendations for sales and operational decisions.
-
----
-
-# 🎯 Business Problem
-
-The sales team has limited visibility into regional and commercial performance, making it difficult to identify:
-
-* High- and low-performing regions
-* Seasonal fluctuations in revenue
-* High-performing products and SKUs
-* Sales channel contribution
-* Customer revenue concentration
-* Profitability drivers
-* Opportunities for revenue and margin improvement
-
-### Business Objective
-
-Develop a data-driven analytical solution that can answer:
-
-> **What is driving sales performance, where are the biggest opportunities, and what actions should the business prioritize?**
+> **Tujuan:** Mengidentifikasi peluang pertumbuhan, memahami faktor yang memengaruhi profitabilitas, serta memberikan rekomendasi berbasis data untuk mendukung keputusan penjualan dan operasional.
 
 ---
 
-# 🔍 Business Questions
+# 🎯 Permasalahan Bisnis
 
-The analysis was designed around the following questions:
+Tim penjualan memiliki keterbatasan visibilitas terhadap kinerja regional dan komersial, sehingga sulit untuk mengidentifikasi:
 
-| #  | Business Question                                           |
-| -- | ----------------------------------------------------------- |
-| 01 | Which states and regions generate the highest revenue?      |
-| 02 | How does revenue change over time?                          |
-| 03 | Are there significant seasonal patterns?                    |
-| 04 | Which products contribute the most revenue?                 |
-| 05 | Which products generate the strongest margins?              |
-| 06 | Which sales channels contribute the most revenue?           |
-| 07 | Which customers generate the highest revenue?               |
-| 08 | Is revenue concentrated among a small number of customers?  |
-| 09 | What factors are most strongly associated with profit?      |
-| 10 | What strategic actions can improve sales and profitability? |
+* Wilayah dengan kinerja tinggi dan rendah
+* Fluktuasi pendapatan berdasarkan musim
+* Produk dan SKU dengan performa terbaik
+* Kontribusi masing-masing saluran penjualan
+* Konsentrasi pendapatan berdasarkan pelanggan
+* Faktor yang memengaruhi profitabilitas
+* Peluang untuk meningkatkan pendapatan dan margin keuntungan
+
+### Tujuan Bisnis
+
+Mengembangkan solusi analitik berbasis data yang dapat menjawab pertanyaan:
+
+> **Apa yang mendorong kinerja penjualan, di mana peluang terbesar berada, dan tindakan apa yang seharusnya menjadi prioritas bisnis?**
 
 ---
 
-# 🧠 Analytical Approach
+# 🔍 Pertanyaan Bisnis
 
-The project follows a structured **end-to-end analytics lifecycle**:
+Analisis dirancang untuk menjawab beberapa pertanyaan bisnis berikut:
+
+| #  | Pertanyaan Bisnis                                                      |
+| -- | ---------------------------------------------------------------------- |
+| 01 | Negara bagian dan wilayah mana yang menghasilkan pendapatan tertinggi? |
+| 02 | Bagaimana perubahan pendapatan dari waktu ke waktu?                    |
+| 03 | Apakah terdapat pola musiman yang signifikan?                          |
+| 04 | Produk mana yang memberikan kontribusi pendapatan terbesar?            |
+| 05 | Produk mana yang menghasilkan margin keuntungan terbaik?               |
+| 06 | Saluran penjualan mana yang memberikan kontribusi pendapatan terbesar? |
+| 07 | Pelanggan mana yang menghasilkan pendapatan tertinggi?                 |
+| 08 | Apakah pendapatan terkonsentrasi pada sejumlah kecil pelanggan?        |
+| 09 | Faktor apa yang memiliki hubungan paling kuat dengan profit?           |
+| 10 | Strategi apa yang dapat meningkatkan penjualan dan profitabilitas?     |
+
+---
+
+# 🧠 Pendekatan Analisis
+
+Proyek ini mengikuti alur **data analytics end-to-end** yang terstruktur:
 
 ```text
-                 BUSINESS PROBLEM
+                 PERMASALAHAN BISNIS
                        │
                        ▼
-               DATA COLLECTION
+                 PENGUMPULAN DATA
                        │
                        ▼
-            DATA CONSOLIDATION
+              KONSOLIDASI DATA
                        │
                        ▼
-          DATA CLEANING & PREPARATION
+          PEMBERSIHAN & PERSIAPAN DATA
                        │
                        ▼
-             FEATURE ENGINEERING
+              FEATURE ENGINEERING
                        │
                        ▼
-           EXPLORATORY DATA ANALYSIS
+       EXPLORATORY DATA ANALYSIS (EDA)
                        │
                        ▼
-               BUSINESS INSIGHTS
+                WAWASAN BISNIS
                        │
                        ▼
-             POWER BI DASHBOARD
+              POWER BI DASHBOARD
                        │
                        ▼
-          BUSINESS RECOMMENDATIONS
+           REKOMENDASI BISNIS
 ```
 
-This workflow ensures that the final dashboard is not just a visualization layer, but the output of a structured analytical process.
+Alur ini memastikan bahwa dashboard akhir bukan hanya sekadar kumpulan visualisasi, tetapi merupakan hasil dari proses analisis yang terstruktur.
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠️ Teknologi yang Digunakan
 
-### Programming & Analysis
+### Programming & Data Analysis
 
-| Technology    | Purpose                       |
-| ------------- | ----------------------------- |
-| 🐍 Python     | Data analysis & preprocessing |
-| 🐼 Pandas     | Data manipulation             |
-| 🔢 NumPy      | Numerical computation         |
-| 📊 Matplotlib | Data visualization            |
-| 📈 Seaborn    | Statistical visualization     |
+| Teknologi     | Penggunaan                      |
+| ------------- | ------------------------------- |
+| 🐍 Python     | Analisis dan preprocessing data |
+| 🐼 Pandas     | Manipulasi data                 |
+| 🔢 NumPy      | Perhitungan numerik             |
+| 📊 Matplotlib | Visualisasi data                |
+| 📈 Seaborn    | Visualisasi statistik           |
 
 ### Business Intelligence
 
-| Technology          | Purpose                           |
-| ------------------- | --------------------------------- |
-| 🟨 Power BI         | Interactive dashboard             |
-| 🔄 Power Query      | Data transformation               |
-| 📊 Power BI Visuals | Business reporting & storytelling |
+| Teknologi           | Penggunaan                    |
+| ------------------- | ----------------------------- |
+| 🟨 Power BI         | Dashboard interaktif          |
+| 🔄 Power Query      | Transformasi data             |
+| 📊 Power BI Visuals | Reporting & data storytelling |
 
-### Supporting Tools
+### Tools Pendukung
 
 ```text
 Google Colab
@@ -141,9 +141,9 @@ GitHub
 
 ---
 
-# 📂 Dataset Structure
+# 📂 Struktur Dataset
 
-The raw data was distributed across multiple tables covering:
+Data mentah terdiri dari beberapa tabel yang mencakup:
 
 ```text
 Sales
@@ -156,9 +156,9 @@ Sales
 └── Budget
 ```
 
-The final analytical dataset was structured around several analytical dimensions.
+Dataset akhir kemudian disusun berdasarkan beberapa dimensi analisis.
 
-### Order & Customer
+### Informasi Order & Pelanggan
 
 ```text
 order_number
@@ -168,7 +168,7 @@ channel
 product_name
 ```
 
-### Financial
+### Informasi Keuangan
 
 ```text
 quantity
@@ -179,7 +179,7 @@ profit
 profit_margin_pct
 ```
 
-### Time
+### Informasi Waktu
 
 ```text
 order_month
@@ -187,7 +187,7 @@ order_month_num
 order_month_name
 ```
 
-### Geography
+### Informasi Geografis
 
 ```text
 state
@@ -197,7 +197,7 @@ lat
 lon
 ```
 
-### Planning
+### Perencanaan
 
 ```text
 budget_2017
@@ -205,119 +205,119 @@ budget_2017
 
 ---
 
-# 🧹 Data Preparation
+# 🧹 Persiapan & Pembersihan Data
 
-The preprocessing stage focused on creating a reliable analytical dataset.
+Tahap preprocessing dilakukan untuk menghasilkan dataset yang siap digunakan dalam analisis.
 
-### Key activities
+### Proses yang Dilakukan
 
-* Header restructuring
-* Data consolidation
-* Table merging
-* Redundant column removal
-* Column standardization
-* Column renaming
-* Data type formatting
-* Key field selection
-* Data validation
+* Restrukturisasi header
+* Konsolidasi data
+* Penggabungan tabel
+* Menghapus kolom redundan
+* Standardisasi nama kolom
+* Mengubah nama kolom
+* Penyesuaian tipe data
+* Pemilihan kolom kunci
+* Validasi data
 
 ### Feature Engineering
 
-Two important business metrics were created:
+Beberapa metrik bisnis penting dibuat selama proses analisis:
 
 ```text
 Profit
 Profit Margin %
 ```
 
-Additional calendar features were also created to support time-series analysis.
+Selain itu, fitur kalender juga dibuat untuk mendukung analisis time-series.
 
-The project documentation reports that **no missing values or duplicate rows were found after preprocessing**.
+Berdasarkan dokumentasi proyek, **tidak ditemukan missing values maupun baris duplikat setelah proses preprocessing**.
 
 ---
 
 # 📊 Exploratory Data Analysis
 
-The EDA phase focused on understanding:
+Tahap EDA berfokus pada pemahaman:
 
 ```text
-WHAT  → What is happening?
-WHERE → Where is it happening?
-WHY   → What could be driving it?
+WHAT  → Apa yang sedang terjadi?
+WHERE → Di mana hal tersebut terjadi?
+WHY   → Apa yang mungkin menjadi penyebabnya?
 ```
 
-The analysis covered:
+Analisis mencakup:
 
-* Sales trends
-* Product performance
-* Profitability
-* Sales channels
-* Geographic performance
-* Customer concentration
-* AOV distribution
-* Customer segmentation
-* Feature correlations
-
----
-
-# 📈 Key Findings
-
-## 01 — Strong Seasonal Pattern
-
-Monthly sales showed a relatively consistent cycle.
-
-### Key observation
-
-* **May–June:** seasonal peak
-* **January:** annual low point
-* **Early 2017:** significant revenue decline
-
-This suggests that sales and operational planning should account for recurring seasonal behavior.
+* Tren penjualan
+* Performa produk
+* Profitabilitas
+* Saluran penjualan
+* Performa geografis
+* Konsentrasi pelanggan
+* Distribusi AOV
+* Segmentasi pelanggan
+* Korelasi antar fitur
 
 ---
 
-## 02 — Product Concentration
+# 📈 Temuan Utama
 
-Products **26 and 25** emerged as the strongest revenue contributors.
+## 01 — Pola Musiman yang Kuat
 
-Together, they represented approximately:
+Penjualan bulanan menunjukkan pola yang relatif konsisten.
 
-> **~25% of total sales**
+### Temuan Utama
 
-This creates both:
+* **Mei–Juni:** periode puncak penjualan
+* **Januari:** titik terendah tahunan
+* **Awal 2017:** terjadi penurunan pendapatan yang cukup signifikan
 
-**Opportunity** → prioritize high-performing products
-
-**Risk** → excessive dependence on a limited number of SKUs
-
----
-
-## 03 — Wholesale Is the Primary Revenue Engine
-
-Revenue contribution by channel:
-
-| Channel        | Contribution |
-| -------------- | -----------: |
-| 🥇 Wholesale   |    **54.1%** |
-| 🥈 Distributor |    **31.3%** |
-| 🥉 Export      |    **14.6%** |
-
-Wholesale represents the largest revenue contributor, while Export presents an opportunity to explore higher-margin growth.
+Temuan ini menunjukkan bahwa perencanaan penjualan dan operasional perlu mempertimbangkan pola musiman yang berulang.
 
 ---
 
-## 04 — California Leads the Market
+## 02 — Konsentrasi Produk
 
-California emerged as the strongest state in both revenue and order volume.
+Produk **26 dan 25** muncul sebagai produk dengan kontribusi pendapatan terbesar.
 
-### Performance
+Secara gabungan, kedua produk tersebut menyumbang sekitar:
+
+> **~25% dari total penjualan**
+
+Hal ini menciptakan dua sisi:
+
+**Peluang** → Memprioritaskan produk dengan performa tinggi.
+
+**Risiko** → Ketergantungan yang terlalu besar pada sejumlah SKU tertentu.
+
+---
+
+## 03 — Wholesale Menjadi Mesin Utama Pendapatan
+
+Kontribusi pendapatan berdasarkan channel:
+
+| Channel        | Kontribusi |
+| -------------- | ---------: |
+| 🥇 Wholesale   |  **54,1%** |
+| 🥈 Distributor |  **31,3%** |
+| 🥉 Export      |  **14,6%** |
+
+Wholesale menjadi kontributor pendapatan terbesar, sementara Export memberikan peluang untuk mengeksplorasi pertumbuhan dengan margin yang lebih tinggi.
+
+---
+
+## 04 — California Memimpin Pasar
+
+California menjadi negara bagian dengan performa terkuat berdasarkan pendapatan dan jumlah order.
+
+### Performa
 
 ```text
 Revenue     ≈ $230M
-Orders      ≈ 7.6K
+Orders      ≈ 7,6K
 ```
 
-Other significant states included:
+Negara bagian lain yang juga menunjukkan kontribusi signifikan:
 
 * Texas
 * Florida
@@ -325,106 +325,106 @@ Other significant states included:
 
 ---
 
-## 05 — West Region Leads Sales
+## 05 — Wilayah West Memimpin Penjualan
 
-Regional performance showed:
+Performa berdasarkan wilayah:
 
-| Region     | Performance       |
+| Wilayah    | Performa          |
 | ---------- | ----------------- |
-| 🥇 West    | Highest           |
-| 🥈 South   | Major contributor |
-| 🥉 Midwest | Stable            |
-| Northeast  | Lowest            |
+| 🥇 West    | Tertinggi         |
+| 🥈 South   | Kontributor utama |
+| 🥉 Midwest | Stabil            |
+| Northeast  | Terendah          |
 
-The **West** region demonstrated strong market performance, while the Northeast represents an opportunity for deeper market investigation.
+Wilayah **West** menunjukkan performa pasar yang kuat, sedangkan Northeast dapat menjadi peluang untuk dilakukan investigasi pasar lebih lanjut.
 
 ---
 
-## 06 — Revenue Concentration Among Customers
+## 06 — Konsentrasi Pendapatan Pelanggan
 
-Customer analysis revealed a substantial difference between the highest- and lowest-performing customers.
+Analisis pelanggan menunjukkan perbedaan yang signifikan antara pelanggan dengan performa tertinggi dan terendah.
 
-**Aibox Company** emerged as the leading revenue-generating customer.
+**Aibox Company** menjadi pelanggan dengan kontribusi pendapatan terbesar.
 
-This indicates the importance of:
+Hal ini menunjukkan pentingnya:
 
 * Customer retention
 * Key-account management
 * Upselling
 * Cross-selling
-* Revenue diversification
+* Diversifikasi pendapatan
 
 ---
 
-## 07 — Pricing Is a Major Profitability Driver
+## 07 — Pricing Merupakan Faktor Penting dalam Profitabilitas
 
-Correlation analysis revealed strong relationships between unit price and financial performance.
+Analisis korelasi menunjukkan hubungan yang kuat antara **unit price** dan metrik keuangan.
 
-| Relationship         | Correlation |
-| -------------------- | ----------: |
-| Unit Price ↔ Cost    |    **0.94** |
-| Unit Price ↔ Revenue |    **0.91** |
-| Revenue ↔ Profit     |    **0.87** |
-| Unit Price ↔ Profit  |    **0.79** |
-| Cost ↔ Profit        |    **0.58** |
+| Hubungan             | Korelasi |
+| -------------------- | -------: |
+| Unit Price ↔ Cost    | **0,94** |
+| Unit Price ↔ Revenue | **0,91** |
+| Revenue ↔ Profit     | **0,87** |
+| Unit Price ↔ Profit  | **0,79** |
+| Cost ↔ Profit        | **0,58** |
 
-Quantity showed comparatively weaker relationships with financial metrics.
+Quantity menunjukkan hubungan yang relatif lebih lemah dengan metrik keuangan.
 
-### Business Interpretation
+### Interpretasi Bisnis
 
-The findings suggest that **pricing and cost management may provide stronger profitability levers than simply increasing sales volume**.
+Temuan ini menunjukkan bahwa **pengelolaan harga dan biaya berpotensi menjadi tuas yang lebih kuat untuk meningkatkan profitabilitas dibandingkan hanya meningkatkan volume penjualan**.
 
 ---
 
-# 💡 Strategic Insights
+# 💡 Insight Strategis
 
-The analysis can be summarized into five major themes:
+Hasil analisis dapat dirangkum menjadi lima fokus utama:
 
 ```text
 SEASONALITY
     ↓
-Plan inventory & campaigns around demand cycles
+Rencanakan inventory & campaign berdasarkan pola permintaan
 
 PRODUCT
     ↓
-Protect high-performing SKUs & optimize weak performers
+Pertahankan SKU unggulan & optimalkan produk dengan performa rendah
 
 CHANNEL
     ↓
-Maintain Wholesale scale while developing Export
+Pertahankan skala Wholesale & kembangkan Export
 
 REGION
     ↓
-Replicate successful regional strategies
+Replikasi strategi dari wilayah dengan performa tinggi
 
 CUSTOMER
     ↓
-Prioritize high-value & high-margin accounts
+Prioritaskan pelanggan dengan revenue & margin tinggi
 ```
 
 ---
 
-# 🚀 Business Recommendations
+# 🚀 Rekomendasi Bisnis
 
-## 01. Seasonal Sales Strategy
+## 01. Strategi Penjualan Musiman
 
-Launch targeted campaigns during weaker periods and strengthen preparation before seasonal peaks.
+Meluncurkan campaign yang lebih terarah pada periode dengan performa rendah serta memperkuat persiapan sebelum periode puncak penjualan.
 
-## 02. SKU Optimization
+## 02. Optimasi SKU
 
-Prioritize Products 26 and 25 while evaluating low-performing SKUs based on demand and profitability.
+Memprioritaskan Produk 26 dan 25 sekaligus mengevaluasi SKU dengan performa rendah berdasarkan demand dan profitabilitas.
 
-## 03. Channel Expansion
+## 03. Ekspansi Channel
 
-Maintain Wholesale as the core revenue engine while developing Export opportunities where margins are attractive.
+Mempertahankan Wholesale sebagai mesin utama pendapatan sekaligus mengembangkan peluang Export pada area dengan margin yang menarik.
 
-## 04. Regional Growth
+## 04. Pertumbuhan Regional
 
-Use California and the West as benchmarks for identifying strategies that can be replicated in weaker regions.
+Menggunakan California dan wilayah West sebagai benchmark untuk mengidentifikasi strategi yang dapat diterapkan pada wilayah dengan performa lebih rendah.
 
 ## 05. Customer Value Management
 
-Segment customers based on:
+Melakukan segmentasi pelanggan berdasarkan:
 
 ```text
 Revenue
@@ -432,50 +432,51 @@ Revenue
 Profit Margin
 ```
 
-Then prioritize retention, upselling, cross-selling, and pricing optimization.
+Kemudian memprioritaskan strategi:
 
-## 06. Margin Monitoring
+* Retention
+* Upselling
+* Cross-selling
+* Pricing optimization
 
-Monitor low-margin accounts and investigate the underlying pricing and cost drivers.
+## 06. Monitoring Margin
 
-The recommendations above are aligned with the project's documented strategic recommendations.
+Memantau akun dengan margin rendah serta menganalisis faktor biaya dan harga yang menyebabkan penurunan profitabilitas.
 
 ---
 
 # 📊 Power BI Dashboard
 
-The analytical results were transformed into an interactive **Power BI dashboard** consisting of three pages.
+Hasil analisis kemudian diterjemahkan menjadi **dashboard Power BI interaktif** yang terdiri dari tiga halaman utama.
 
 ### 01 — Performance Summary
 
-Provides an overview of:
+Menampilkan:
 
-* Revenue performance
-* Sales trends
-* Product performance
-* Channel performance
-* Regional performance
+* Performa pendapatan
+* Tren penjualan
+* Performa produk
+* Performa channel
+* Performa regional
 
 ### 02 — Customer Segmentation
 
-Focuses on:
+Berfokus pada:
 
-* Customer revenue
-* Customer profitability
-* Revenue ranking
-* Revenue vs. margin
+* Pendapatan pelanggan
+* Profitabilitas pelanggan
+* Ranking pelanggan
+* Revenue vs. Margin
 
 ### 03 — Revenue Scenario
 
-Provides an interactive analytical view for exploring revenue-related scenarios.
-
-The presentation documents these three dashboard pages as the final visualization output.
+Menyediakan tampilan interaktif untuk mengeksplorasi skenario dan performa yang berkaitan dengan pendapatan.
 
 ---
 
 # 🖼️ Dashboard Preview
 
-> Replace the paths below with your actual screenshot filenames.
+> Ganti path di bawah dengan nama file screenshot Power BI Anda.
 
 ### Performance Summary
 
@@ -497,7 +498,7 @@ The presentation documents these three dashboard pages as the final visualizatio
 
 ---
 
-# 📁 Repository Structure
+# 📁 Struktur Repository
 
 ```text
 Regional-Sales-Analysis/
@@ -524,7 +525,7 @@ Regional-Sales-Analysis/
 
 ---
 
-# 🎯 Skills Demonstrated
+# 🎯 Kompetensi yang Ditunjukkan
 
 ### Data Analytics
 
@@ -553,7 +554,7 @@ Regional-Sales-Analysis/
 ```text
 ✓ Power BI Dashboard Development
 ✓ KPI Analysis
-✓ Interactive Visualization
+✓ Interactive Data Visualization
 ✓ Business Storytelling
 ✓ Dashboard Design
 ```
@@ -562,7 +563,7 @@ Regional-Sales-Analysis/
 
 ```text
 ✓ Problem Solving
-✓ Business Question Formulation
+✓ Perumusan Business Question
 ✓ Insight Generation
 ✓ Strategic Recommendation
 ✓ Data-Driven Decision Making
@@ -570,33 +571,39 @@ Regional-Sales-Analysis/
 
 ---
 
-# 🏆 Project Impact
+# 🏆 Dampak Proyek
 
-This project demonstrates the ability to move beyond:
+Proyek ini menunjukkan kemampuan untuk bergerak lebih jauh dari sekadar:
 
-> **"What does the data say?"**
+> **"Apa yang dikatakan oleh data?"**
 
-toward:
+menjadi:
 
-> **"What should the business do about it?"**
+> **"Apa yang harus dilakukan bisnis berdasarkan data tersebut?"**
 
-The final analytical workflow connects:
+Workflow analisis akhir menghubungkan:
 
 **Raw Data → Clean Data → EDA → Insights → Dashboard → Business Recommendations**
 
-This approach enables stakeholders to independently explore sales performance and use the findings to support sales planning, customer strategy, product optimization, regional expansion, and profitability management.
+Pendekatan ini memungkinkan stakeholder untuk mengeksplorasi performa penjualan secara mandiri dan menggunakan hasil analisis untuk mendukung:
+
+* Sales planning
+* Customer strategy
+* Product optimization
+* Regional expansion
+* Profitability management
 
 ---
 
-# 👨‍💻 About Me
+# 👨‍💻 Tentang Saya
 
 ### Faris Fatur Rohman
 
-**Mathematics Graduate | Aspiring Data Analyst**
+**Lulusan Matematika | Aspiring Data Analyst**
 
-I am a Mathematics graduate with a strong interest in **Data Analytics and Data Science**, focused on transforming raw data into meaningful insights that support business decisions.
+Saya merupakan lulusan Matematika dengan ketertarikan kuat pada **Data Analytics dan Data Science**, khususnya dalam mengubah data mentah menjadi insight yang dapat mendukung pengambilan keputusan bisnis.
 
-### Core Skills
+### Kompetensi Utama
 
 ```text
 Python
@@ -611,13 +618,13 @@ Data Visualization
 Business Intelligence
 ```
 
-I am particularly interested in opportunities where I can combine **mathematical thinking, analytical skills, and business understanding** to solve real-world problems using data.
+Saya tertarik pada peluang yang memungkinkan saya menggabungkan **kemampuan berpikir matematis, analytical skills, dan business understanding** untuk menyelesaikan permasalahan nyata menggunakan data.
 
 ---
 
-# 💼 Career Interests
+# 💼 Minat Karier
 
-Currently interested in opportunities such as:
+Saya terbuka terhadap peluang pada bidang:
 
 * Data Analyst
 * Junior Data Analyst
@@ -630,14 +637,14 @@ Currently interested in opportunities such as:
 
 # ⭐ Let's Connect
 
-If you're a recruiter, hiring manager, or fellow data professional interested in discussing this project, feel free to connect.
+Jika Anda merupakan recruiter, hiring manager, atau profesional data yang tertarik untuk berdiskusi mengenai proyek ini, jangan ragu untuk terhubung.
 
-**I'm always open to learning, collaborating, and solving interesting problems with data.**
+**Saya terbuka untuk terus belajar, berkolaborasi, dan menyelesaikan permasalahan menarik menggunakan data.**
 
 ---
 
 ## 📌 Disclaimer
 
-This project is intended for **portfolio and educational purposes**.
+Proyek ini dibuat untuk **keperluan portfolio dan edukasi**.
 
-The objective is to demonstrate an end-to-end Data Analytics workflow, including data preparation, exploratory analysis, business insight generation, dashboard development, and strategic recommendations.
+Tujuan utama proyek adalah menunjukkan kemampuan dalam menjalankan proses **Data Analytics end-to-end**, mulai dari persiapan data, exploratory analysis, menghasilkan business insights, membangun dashboard, hingga menyusun strategic recommendations.
