@@ -2,322 +2,258 @@
 
 # 📊 Regional Sales Analysis
 
-### Turning Sales Data into Actionable Business Insights
+> **End-to-End Data Analytics Project | Python • Pandas • Power BI • Business Intelligence**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-Data%20Analysis-blue?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-yellow?style=for-the-badge&logo=powerbi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-Data%20Manipulation-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/EDA-Exploratory%20Analysis-orange?style=for-the-badge" />
-</p>
+An end-to-end **Regional Sales Analysis** project designed to transform five years of historical sales data into actionable business insights.
 
-<p align="center">
-  <b>End-to-End Data Analytics Project</b><br>
-  Python • Pandas • NumPy • Matplotlib • Seaborn • Power BI
-</p>
+The project focuses on understanding **sales performance, profitability, customer behavior, product performance, sales channels, and regional trends** across the United States.
+
+The analysis combines **Python-based Exploratory Data Analysis (EDA)** with an **interactive Power BI dashboard** to support data-driven sales and operational decisions.
 
 ---
 
-## 📌 Executive Summary
+## 🎯 Business Problem
 
-**Regional Sales Analysis** is an end-to-end data analytics project focused on transforming **five years of historical sales data** into actionable business insights.
+The sales team lacks clear, data-driven visibility into regional performance, making it difficult to:
 
-The project analyzes sales performance across multiple dimensions:
-
-* 🌎 **Region & State**
-* 📦 **Product & SKU**
-* 🛒 **Sales Channel**
-* 👥 **Customer**
-* 📅 **Time & Seasonality**
-* 💰 **Revenue & Profitability**
-
-The analytical process starts with **data consolidation and preprocessing**, continues through **Exploratory Data Analysis (EDA)**, and ends with an **interactive Power BI dashboard and strategic business recommendations**.
-
-> **Goal:** Identify growth opportunities, understand profitability drivers, and provide data-driven recommendations for sales and operational decisions.
-
----
-
-# 🎯 Business Problem
-
-The sales team has limited visibility into regional and commercial performance, making it difficult to identify:
-
-* High- and low-performing regions
-* Seasonal fluctuations in revenue
-* High-performing products and SKUs
-* Sales channel contribution
-* Customer revenue concentration
-* Profitability drivers
-* Opportunities for revenue and margin improvement
+* Identify high-performing and underperforming regions
+* Understand seasonal sales fluctuations
+* Identify high-performing products and SKUs
+* Evaluate sales channel contribution and profitability
+* Understand customer revenue concentration
+* Identify opportunities to improve profit margins
+* Support strategic sales and resource allocation decisions
 
 ### Business Objective
 
-Develop a data-driven analytical solution that can answer:
+The objective of this project is to analyze and visualize historical sales data to:
 
-> **What is driving sales performance, where are the biggest opportunities, and what actions should the business prioritize?**
-
----
-
-# 🔍 Business Questions
-
-The analysis was designed around the following questions:
-
-| #  | Business Question                                           |
-| -- | ----------------------------------------------------------- |
-| 01 | Which states and regions generate the highest revenue?      |
-| 02 | How does revenue change over time?                          |
-| 03 | Are there significant seasonal patterns?                    |
-| 04 | Which products contribute the most revenue?                 |
-| 05 | Which products generate the strongest margins?              |
-| 06 | Which sales channels contribute the most revenue?           |
-| 07 | Which customers generate the highest revenue?               |
-| 08 | Is revenue concentrated among a small number of customers?  |
-| 09 | What factors are most strongly associated with profit?      |
-| 10 | What strategic actions can improve sales and profitability? |
+> **Identify growth opportunities, understand profitability drivers, and provide actionable recommendations for improving sales performance.**
 
 ---
 
-# 🧠 Analytical Approach
+# 🔎 Key Business Questions
 
-The project follows a structured **end-to-end analytics lifecycle**:
+This analysis addresses several important business questions:
 
-```text
-                 BUSINESS PROBLEM
-                       │
-                       ▼
-               DATA COLLECTION
-                       │
-                       ▼
-            DATA CONSOLIDATION
-                       │
-                       ▼
-          DATA CLEANING & PREPARATION
-                       │
-                       ▼
-             FEATURE ENGINEERING
-                       │
-                       ▼
-           EXPLORATORY DATA ANALYSIS
-                       │
-                       ▼
-               BUSINESS INSIGHTS
-                       │
-                       ▼
-             POWER BI DASHBOARD
-                       │
-                       ▼
-          BUSINESS RECOMMENDATIONS
-```
-
-This workflow ensures that the final dashboard is not just a visualization layer, but the output of a structured analytical process.
+1. Which regions and states generate the highest revenue?
+2. How does sales performance change over time?
+3. Which products contribute the most revenue?
+4. Which products generate the highest profit margins?
+5. Which sales channels contribute the most revenue?
+6. Which customers generate the highest revenue?
+7. Is revenue concentrated among a small number of customers?
+8. What is the relationship between revenue, cost, price, quantity, and profit?
+9. Which regions or customer segments require additional attention?
+10. What strategic actions can improve revenue and profitability?
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠️ Tools & Technologies
 
-### Programming & Analysis
-
-| Technology    | Purpose                       |
-| ------------- | ----------------------------- |
-| 🐍 Python     | Data analysis & preprocessing |
-| 🐼 Pandas     | Data manipulation             |
-| 🔢 NumPy      | Numerical computation         |
-| 📊 Matplotlib | Data visualization            |
-| 📈 Seaborn    | Statistical visualization     |
-
-### Business Intelligence
-
-| Technology          | Purpose                           |
-| ------------------- | --------------------------------- |
-| 🟨 Power BI         | Interactive dashboard             |
-| 🔄 Power Query      | Data transformation               |
-| 📊 Power BI Visuals | Business reporting & storytelling |
-
-### Supporting Tools
-
-```text
-Google Colab
-Microsoft Excel
-PowerPoint
-GitHub
-```
+| Category              | Tools                           |
+| --------------------- | ------------------------------- |
+| Programming           | Python                          |
+| Data Manipulation     | Pandas, NumPy                   |
+| Data Visualization    | Matplotlib, Seaborn             |
+| Data Analysis         | Exploratory Data Analysis (EDA) |
+| Business Intelligence | Microsoft Power BI              |
+| Data Preparation      | Power Query / Python            |
+| Presentation          | PowerPoint                      |
+| Environment           | Google Colab                    |
 
 ---
 
-# 📂 Dataset Structure
+# 📂 Dataset Overview
 
-The raw data was distributed across multiple tables covering:
+The raw dataset contains sales-related information distributed across multiple tables, including:
 
-```text
-Sales
-├── Orders
-├── Customers
-├── Products
-├── States
-├── Regions
-├── Channels
-└── Budget
-```
+* Sales
+* Customers
+* Products
+* Regions
+* States
+* Channels
+* Budget
 
-The final analytical dataset was structured around several analytical dimensions.
+The data was consolidated into a final analytical dataset containing:
 
-### Order & Customer
+### Customer & Order Information
 
-```text
-order_number
-order_date
-customer_name
-channel
-product_name
-```
+* `order_number`
+* `order_date`
+* `customer_name`
+* `channel`
+* `product_name`
 
-### Financial
+### Financial Metrics
 
-```text
-quantity
-unit_price
-revenue
-cost
-profit
-profit_margin_pct
-```
+* `quantity`
+* `unit_price`
+* `revenue`
+* `cost`
+* `profit`
+* `profit_margin_pct`
 
-### Time
+### Calendar Features
 
-```text
-order_month
-order_month_num
-order_month_name
-```
+* `order_month_name`
+* `order_month_num`
+* `order_month`
 
-### Geography
+### Geographic Features
 
-```text
-state
-state_name
-us_region
-lat
-lon
-```
+* `state`
+* `state_name`
+* `us_region`
+* `lat`
+* `lon`
 
 ### Planning
 
-```text
-budget_2017
-```
+* `budget_2017`
 
 ---
 
-# 🧹 Data Preparation
+# 🔄 Project Workflow
 
-The preprocessing stage focused on creating a reliable analytical dataset.
+```text
+Business Understanding
+        ↓
+Data Collection
+        ↓
+Data Consolidation
+        ↓
+Data Cleaning
+        ↓
+Feature Engineering
+        ↓
+Exploratory Data Analysis
+        ↓
+Business Insights
+        ↓
+Power BI Dashboard
+        ↓
+Business Recommendations
+```
 
-### Key activities
+### 1. Business Understanding
 
-* Header restructuring
-* Data consolidation
-* Table merging
-* Redundant column removal
+Defined the core business problem and analytical objectives.
+
+### 2. Data Collection & Consolidation
+
+Combined sales, customer, product, geographic, regional, and budget information from multiple Excel sheets.
+
+### 3. Data Cleaning
+
+Performed:
+
 * Column standardization
-* Column renaming
+* Redundant column removal
+* Header restructuring
 * Data type formatting
-* Key field selection
+* Table merging
+* Key column selection
+* Column renaming
 * Data validation
 
-### Feature Engineering
+The project documentation reports no missing values or duplicate rows after preprocessing.
 
-Two important business metrics were created:
+### 4. Feature Engineering
 
-```text
-Profit
-Profit Margin %
-```
+Created additional analytical metrics including:
 
-Additional calendar features were also created to support time-series analysis.
+* `profit`
+* `profit_margin_pct`
+* `order_month`
+* `order_month_num`
+* `order_month_name`
 
-The project documentation reports that **no missing values or duplicate rows were found after preprocessing**.
+### 5. Exploratory Data Analysis
 
----
+Analyzed:
 
-# 📊 Exploratory Data Analysis
-
-The EDA phase focused on understanding:
-
-```text
-WHAT  → What is happening?
-WHERE → Where is it happening?
-WHY   → What could be driving it?
-```
-
-The analysis covered:
-
-* Sales trends
+* Monthly sales trends
 * Product performance
-* Profitability
+* Profit margins
 * Sales channels
-* Geographic performance
-* Customer concentration
-* AOV distribution
+* State-level performance
+* Regional performance
+* Average Order Value (AOV)
+* Customer revenue
 * Customer segmentation
 * Feature correlations
 
----
+### 6. Dashboard Development
 
-# 📈 Key Findings
+Built an interactive Power BI dashboard with multiple analytical views:
 
-## 01 — Strong Seasonal Pattern
+* **Performance Summary**
+* **Customer Segmentation**
+* **Revenue Scenario**
 
-Monthly sales showed a relatively consistent cycle.
-
-### Key observation
-
-* **May–June:** seasonal peak
-* **January:** annual low point
-* **Early 2017:** significant revenue decline
-
-This suggests that sales and operational planning should account for recurring seasonal behavior.
+The dashboard enables users to explore sales performance interactively.
 
 ---
 
-## 02 — Product Concentration
+# 📈 Exploratory Data Analysis
 
-Products **26 and 25** emerged as the strongest revenue contributors.
+## 1. Monthly Sales Trend
 
-Together, they represented approximately:
+The analysis identified a relatively consistent sales cycle, with revenue generally ranging between **$24M–$26M**.
 
-> **~25% of total sales**
+Key observations:
 
-This creates both:
+* May–June represent the seasonal peak.
+* January represents an annual low point.
+* Early 2017 showed a notable revenue decline.
 
-**Opportunity** → prioritize high-performing products
-
-**Risk** → excessive dependence on a limited number of SKUs
-
----
-
-## 03 — Wholesale Is the Primary Revenue Engine
-
-Revenue contribution by channel:
-
-| Channel        | Contribution |
-| -------------- | -----------: |
-| 🥇 Wholesale   |    **54.1%** |
-| 🥈 Distributor |    **31.3%** |
-| 🥉 Export      |    **14.6%** |
-
-Wholesale represents the largest revenue contributor, while Export presents an opportunity to explore higher-margin growth.
+This suggests that **seasonality should be incorporated into sales and inventory planning**.
 
 ---
 
-## 04 — California Leads the Market
+## 2. Product Performance
 
-California emerged as the strongest state in both revenue and order volume.
+Products **26 and 25** emerged as the leading revenue-generating products.
 
-### Performance
+Meanwhile:
 
-```text
-Revenue     ≈ $230M
-Orders      ≈ 7.6K
-```
+* Products 5, 13, 14, and 15 formed a middle-performing group.
+* Products 1–4 were among the lowest revenue contributors.
+
+### Business Implication
+
+The business should:
+
+* Protect availability of high-performing products.
+* Identify growth opportunities for mid-tier products.
+* Review pricing, cost structure, or demand drivers for low-performing SKUs.
+
+---
+
+## 3. Product Profitability
+
+The highest-margin products consistently generated average margins above **$7.3K** in the analysis.
+
+Top-performing products included:
+
+* Product 18
+* Product 28
+* Product 5
+* Product 11
+* Product 12
+* Product 26
+
+This indicates that **revenue leadership and profitability leadership are not necessarily driven by the same products**, making both metrics important for portfolio decisions.
+
+---
+
+# 🌎 Regional & Geographic Analysis
+
+## State-Level Performance
+
+**California** emerged as the strongest state in terms of revenue and order volume.
 
 Other significant states included:
 
@@ -325,134 +261,177 @@ Other significant states included:
 * Florida
 * Illinois
 
----
-
-## 05 — West Region Leads Sales
-
-Regional performance showed:
-
-| Region     | Performance       |
-| ---------- | ----------------- |
-| 🥇 West    | Highest           |
-| 🥈 South   | Major contributor |
-| 🥉 Midwest | Stable            |
-| Northeast  | Lowest            |
-
-The **West** region demonstrated strong market performance, while the Northeast represents an opportunity for deeper market investigation.
+The analysis indicates that revenue and order volume are strongly related at the state level.
 
 ---
 
-## 06 — Revenue Concentration Among Customers
+## Regional Performance
 
-Customer analysis revealed a substantial difference between the highest- and lowest-performing customers.
+The **West** region recorded the highest sales performance.
 
-**Aibox Company** emerged as the leading revenue-generating customer.
+Regional observations:
 
-This indicates the importance of:
+| Region    | Performance                |
+| --------- | -------------------------- |
+| West      | Highest sales contribution |
+| South     | Major sales contributor    |
+| Midwest   | Stable / medium market     |
+| Northeast | Lowest sales contribution  |
 
-* Customer retention
-* Key-account management
+### Business Implication
+
+The West provides a benchmark for understanding successful regional strategies, while the Northeast presents an opportunity for deeper market analysis and targeted growth initiatives.
+
+---
+
+# 🛒 Sales Channel Analysis
+
+Revenue contribution by channel:
+
+| Channel     | Revenue Contribution |
+| ----------- | -------------------: |
+| Wholesale   |            **54.1%** |
+| Distributor |            **31.3%** |
+| Export      |            **14.6%** |
+
+Wholesale is the dominant sales channel.
+
+However, the analysis also highlights **Export as an attractive channel from a profitability perspective**, creating an opportunity to balance revenue scale with margin performance.
+
+---
+
+# 👥 Customer Analysis
+
+Customer analysis revealed significant revenue concentration.
+
+**Aibox Company** emerged as the strongest revenue-generating customer, while the lowest-performing customers generated substantially less revenue.
+
+This creates two strategic priorities:
+
+### Customer Retention
+
+Protect relationships with high-value customers that contribute disproportionately to total revenue.
+
+### Customer Development
+
+Identify opportunities to increase revenue from medium-value customers through:
+
 * Upselling
 * Cross-selling
-* Revenue diversification
+* Targeted promotions
+* Account-based strategies
 
 ---
 
-## 07 — Pricing Is a Major Profitability Driver
+# 💰 Customer Revenue vs. Profit Margin
 
-Correlation analysis revealed strong relationships between unit price and financial performance.
+Customer segmentation was performed using **revenue and profit margin**.
 
-| Relationship         | Correlation |
-| -------------------- | ----------: |
-| Unit Price ↔ Cost    |    **0.94** |
-| Unit Price ↔ Revenue |    **0.91** |
-| Revenue ↔ Profit     |    **0.87** |
-| Unit Price ↔ Profit  |    **0.79** |
-| Cost ↔ Profit        |    **0.58** |
+The analysis identified:
 
-Quantity showed comparatively weaker relationships with financial metrics.
+* Customers generating high revenue but relatively lower margins
+* Customers with moderate revenue but strong margins
+* Opportunities for targeted upselling
+* Potential discount/pricing issues among large accounts
 
-### Business Interpretation
+This allows the business to move beyond simply asking:
+
+> **"Who generates the most revenue?"**
+
+and instead ask:
+
+> **"Which customers generate the most valuable revenue?"**
+
+---
+
+# 🔗 Correlation Analysis
+
+The correlation analysis revealed several important relationships.
+
+### Key Findings
+
+* Unit price showed a very strong relationship with cost (**0.94**).
+* Unit price also showed a strong relationship with revenue (**0.91**).
+* Unit price had a strong relationship with profit (**0.79**).
+* Revenue and profit showed a strong relationship (**0.87**).
+* Quantity showed a relatively weaker relationship with financial metrics.
+
+### Business Implication
 
 The findings suggest that **pricing and cost management may provide stronger profitability levers than simply increasing sales volume**.
 
 ---
 
-# 💡 Strategic Insights
+# 💡 Key Business Insights
 
-The analysis can be summarized into five major themes:
+### 1. Strong Seasonality
 
-```text
-SEASONALITY
-    ↓
-Plan inventory & campaigns around demand cycles
+Sales performance follows a recognizable seasonal pattern, with May–June representing a strong period and January showing weaker performance.
 
-PRODUCT
-    ↓
-Protect high-performing SKUs & optimize weak performers
+### 2. Product Concentration
 
-CHANNEL
-    ↓
-Maintain Wholesale scale while developing Export
+Products **26 and 25** account for approximately **25% of total sales**, creating both a growth opportunity and concentration risk.
 
-REGION
-    ↓
-Replicate successful regional strategies
+### 3. Channel Concentration
 
-CUSTOMER
-    ↓
-Prioritize high-value & high-margin accounts
-```
+Wholesale contributes approximately **54% of sales**, making it the primary revenue engine.
+
+### 4. Geographic Concentration
+
+California is the leading state, generating approximately **$230M in revenue and 7.6K orders**.
+
+### 5. Customer Concentration
+
+A small number of high-value customers contribute disproportionately to overall revenue.
+
+### 6. Pricing Matters
+
+The correlation analysis indicates that pricing is closely connected with cost, revenue, and profitability.
 
 ---
 
 # 🚀 Business Recommendations
 
-## 01. Seasonal Sales Strategy
+## 1. Seasonal Sales Strategy
 
-Launch targeted campaigns during weaker periods and strengthen preparation before seasonal peaks.
+Develop targeted campaigns during weaker periods while preparing inventory and resources ahead of seasonal peaks.
 
-## 02. SKU Optimization
+## 2. SKU Optimization
 
-Prioritize Products 26 and 25 while evaluating low-performing SKUs based on demand and profitability.
+Increase focus on high-performing Products 26 and 25 while reviewing low-performing SKUs based on profitability and demand.
 
-## 03. Channel Expansion
+## 3. Channel Expansion
 
-Maintain Wholesale as the core revenue engine while developing Export opportunities where margins are attractive.
+Maintain the scale of Wholesale while exploring additional growth through Export, particularly where higher margins can be achieved.
 
-## 04. Regional Growth
+## 4. Regional Growth
 
-Use California and the West as benchmarks for identifying strategies that can be replicated in weaker regions.
+Use California and the West region as benchmarks and investigate strategies that could improve performance in lower-performing regions.
 
-## 05. Customer Value Management
+## 5. Customer Value Management
 
-Segment customers based on:
+Segment customers based on revenue and profitability to prioritize:
 
-```text
-Revenue
-+
-Profit Margin
-```
+* Retention
+* Upselling
+* Cross-selling
+* Pricing optimization
 
-Then prioritize retention, upselling, cross-selling, and pricing optimization.
+## 6. Margin Monitoring
 
-## 06. Margin Monitoring
-
-Monitor low-margin accounts and investigate the underlying pricing and cost drivers.
-
-The recommendations above are aligned with the project's documented strategic recommendations.
+Monitor low-margin accounts and investigate the underlying cost and pricing drivers.
 
 ---
 
 # 📊 Power BI Dashboard
 
-The analytical results were transformed into an interactive **Power BI dashboard** consisting of three pages.
+The project includes an interactive Power BI dashboard consisting of three analytical pages:
 
 ### 01 — Performance Summary
 
 Provides an overview of:
 
-* Revenue performance
+* Revenue
 * Sales trends
 * Product performance
 * Channel performance
@@ -460,186 +439,131 @@ Provides an overview of:
 
 ### 02 — Customer Segmentation
 
-Focuses on:
+Analyzes:
 
 * Customer revenue
-* Customer profitability
-* Revenue ranking
+* Profitability
+* Customer ranking
 * Revenue vs. margin
 
 ### 03 — Revenue Scenario
 
-Provides an interactive analytical view for exploring revenue-related scenarios.
-
-The presentation documents these three dashboard pages as the final visualization output.
+Provides an interactive view for exploring revenue-related scenarios and business performance.
 
 ---
 
-# 🖼️ Dashboard Preview
+# 📸 Dashboard Preview
 
-> Replace the paths below with your actual screenshot filenames.
+> Add your Power BI dashboard screenshots here.
 
-### Performance Summary
+Example:
 
-<p align="center">
-  <img src="screenshots/dashboard-overview.png" width="90%">
-</p>
+```markdown
+![Performance Summary](screenshots/dashboard-overview.png)
 
-### Customer Segmentation
+![Customer Segmentation](screenshots/customer-segmentation.png)
 
-<p align="center">
-  <img src="screenshots/customer-segmentation.png" width="90%">
-</p>
-
-### Revenue Scenario
-
-<p align="center">
-  <img src="screenshots/revenue-scenario.png" width="90%">
-</p>
+![Revenue Scenario](screenshots/revenue-scenario.png)
+```
 
 ---
 
-# 📁 Repository Structure
+# 📁 Suggested Repository Structure
 
 ```text
 Regional-Sales-Analysis/
 │
-├── 📄 README.md
+├── README.md
 │
-├── 📂 data/
+├── data/
 │   └── README.md
 │
-├── 📂 notebooks/
+├── notebooks/
 │   └── Regional_Sales_Analysis.ipynb
 │
-├── 📂 powerbi/
+├── powerbi/
 │   └── Regional_Sales_Analysis.pbix
 │
-├── 📂 screenshots/
+├── screenshots/
 │   ├── dashboard-overview.png
 │   ├── customer-segmentation.png
 │   └── revenue-scenario.png
 │
-└── 📂 presentation/
+└── presentation/
     └── Regional_Sales_Analysis.pptx
 ```
 
 ---
 
-# 🎯 Skills Demonstrated
+# 🎓 Skills Demonstrated
 
-### Data Analytics
+This project demonstrates practical capabilities in:
 
-```text
-✓ Exploratory Data Analysis
-✓ Trend Analysis
-✓ Product Analysis
-✓ Customer Analysis
-✓ Regional Analysis
-✓ Profitability Analysis
-✓ Correlation Analysis
-```
+**Data Analytics**
 
-### Data Preparation
+* Exploratory Data Analysis
+* Trend Analysis
+* Customer Analysis
+* Product Analysis
+* Regional Analysis
+* Profitability Analysis
+* Correlation Analysis
 
-```text
-✓ Data Cleaning
-✓ Data Transformation
-✓ Data Integration
-✓ Feature Engineering
-✓ Data Validation
-```
+**Data Preparation**
 
-### Business Intelligence
+* Data Cleaning
+* Data Transformation
+* Data Integration
+* Feature Engineering
 
-```text
-✓ Power BI Dashboard Development
-✓ KPI Analysis
-✓ Interactive Visualization
-✓ Business Storytelling
-✓ Dashboard Design
-```
+**Business Intelligence**
 
-### Business & Analytical Thinking
+* Dashboard Development
+* KPI Analysis
+* Interactive Data Visualization
+* Business Storytelling
 
-```text
-✓ Problem Solving
-✓ Business Question Formulation
-✓ Insight Generation
-✓ Strategic Recommendation
-✓ Data-Driven Decision Making
-```
+**Business Skills**
+
+* Problem Solving
+* Analytical Thinking
+* Insight Generation
+* Strategic Recommendations
+* Data-Driven Decision Making
 
 ---
 
-# 🏆 Project Impact
+# 📌 Project Outcome
 
-This project demonstrates the ability to move beyond:
+This project demonstrates an end-to-end analytical workflow:
 
-> **"What does the data say?"**
+> **Raw Data → Clean Data → EDA → Business Insights → Power BI Dashboard → Strategic Recommendations**
 
-toward:
-
-> **"What should the business do about it?"**
-
-The final analytical workflow connects:
-
-**Raw Data → Clean Data → EDA → Insights → Dashboard → Business Recommendations**
-
-This approach enables stakeholders to independently explore sales performance and use the findings to support sales planning, customer strategy, product optimization, regional expansion, and profitability management.
+The final output transforms complex historical sales data into a business-oriented analytical solution that can support **sales planning, customer strategy, product optimization, regional expansion, and profitability management**.
 
 ---
 
 # 👨‍💻 About Me
 
-### Faris Fatur Rohman
+I am a **Mathematics graduate with a strong interest in Data Analytics and Data Science**, focused on transforming data into actionable business insights.
 
-**Mathematics Graduate | Aspiring Data Analyst**
+My analytical toolkit includes:
 
-I am a Mathematics graduate with a strong interest in **Data Analytics and Data Science**, focused on transforming raw data into meaningful insights that support business decisions.
+**Python | SQL | Excel | Power BI | Pandas | NumPy | Data Cleaning | EDA | Data Visualization**
 
-### Core Skills
-
-```text
-Python
-SQL
-Microsoft Excel
-Power BI
-Pandas
-NumPy
-Data Cleaning
-EDA
-Data Visualization
-Business Intelligence
-```
-
-I am particularly interested in opportunities where I can combine **mathematical thinking, analytical skills, and business understanding** to solve real-world problems using data.
+I am particularly interested in opportunities where I can combine **analytical thinking, business understanding, and technical skills** to solve real-world problems using data.
 
 ---
 
-# 💼 Career Interests
+## ⭐ Let's Connect
 
-Currently interested in opportunities such as:
+If you are a recruiter, hiring manager, or fellow data professional interested in discussing this project or potential opportunities, feel free to connect with me.
 
-* Data Analyst
-* Junior Data Analyst
-* Business Intelligence Analyst
-* BI Developer
-* Data Science
-* Analytics Internship
+**Open to:**
+`Data Analyst` • `Junior Data Analyst` • `Business Intelligence` • `Data Science`
 
 ---
 
-# ⭐ Let's Connect
+## 📜 Disclaimer
 
-If you're a recruiter, hiring manager, or fellow data professional interested in discussing this project, feel free to connect.
-
-**I'm always open to learning, collaborating, and solving interesting problems with data.**
-
----
-
-## 📌 Disclaimer
-
-This project is intended for **portfolio and educational purposes**.
-
-The objective is to demonstrate an end-to-end Data Analytics workflow, including data preparation, exploratory analysis, business insight generation, dashboard development, and strategic recommendations.
+This project is created for **portfolio and educational purposes**. The analysis focuses on demonstrating an end-to-end data analytics workflow, from data preparation and exploratory analysis to dashboard development and business recommendations.
